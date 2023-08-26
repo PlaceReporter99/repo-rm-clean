@@ -1,5 +1,5 @@
 name: "Wipe repository"
-description: "Remove everything except the .github folder and files inside it. ONLY USE IN A SANDBOX/TESTING REPO AS THIS IS VERY DESTRUCTIVE."
+description: "Remove everything except the .github folder and files inside it. THIS IS VERY DESTRUCTIVE."
 inputs:
   commit-message:
     description: "Commit message to use when cleaning up the repository"
