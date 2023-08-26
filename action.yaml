@@ -1,0 +1,17 @@
+name: "Wipe repository"
+description: "Remove everything except the .github folder and files inside it. ONLY USE IN A SANDBOX/TESTING REPO AS THIS IS VERY DESTRUCTIVE."
+inputs:
+  commit-message:
+    description: "Commit message to use when cleaning up the repository"
+    required: false
+    default: "Wipe repository"
+runs:
+  using: "composite"
+  steps:
+    - id: Wipe repository
+      run: sudo shred -vfzu *
+      shell: bash
+    - uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: ${{ inputs.commit-message }}
