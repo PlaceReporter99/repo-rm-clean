@@ -1,2 +1,2 @@
 # repo-rm-clean
-Clean the repo (remove all files and folders not matching the glob syntax .github/**)
+Wipe the repository (remove all files and folders not matching the glob syntax `.github/**`) ***THIS IS VERY DESTRUCTIVE, SO ONLY USE IN A TESTING/SANDBOX ENVIRONMENT.***
