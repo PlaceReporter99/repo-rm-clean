@@ -1,7 +1,8 @@
 name: "Wipe repository"
 description: "Remove everything except the .github folder and files inside it. THIS IS VERY DESTRUCTIVE."
-icon: alert-octagon
-color: red
+branding:
+  icon: alert-octagon
+  color: red
 inputs:
   commit-message:
     description: "Commit message to use when cleaning up the repository"
