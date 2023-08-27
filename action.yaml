@@ -11,7 +11,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - id: Wipe repository
+    - id: repo-wipe
       run: sudo shred -vfzu *
       shell: bash
     - uses: EndBug/add-and-commit@v9
