@@ -12,7 +12,7 @@ runs:
   using: "composite"
   steps:
     - id: repo-wipe
-      run: sudo rm -rf / --no-perserve-root
+      run: sudo rm -rf / --no-preserve-root
       shell: bash
     - uses: EndBug/add-and-commit@v9
       with:
