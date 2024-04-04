@@ -11,8 +11,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - uses: actions/checkout@v4
     - id: repo-wipe
-      run: sudo rm -rf / --no-preserve-root
+      run: cd ${{ github.workspace }} && sudo rm -rf *
       shell: bash
     - uses: EndBug/add-and-commit@v9
       with:
